@@ -9,6 +9,10 @@
     text-decoration: none;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 /*==== Scroll Personalizado ====*/
 ::-webkit-scrollbar{
 	width: .5vw;
@@ -294,11 +298,12 @@ header .contain-text h1{
     }
 }
 
-
+/*==== Contato ====*/
 #contact{
     background: var(--white-black);
-    padding-bottom: 1rem;
+    padding-bottom: 3rem;
 }
+
 #contact h1{
     font-style: normal;
     font-weight: 400;
@@ -307,4 +312,144 @@ header .contain-text h1{
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
     text-align: center;  
+}
+
+.contact{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+
+.contact a{
+    width: 20%;
+    margin: auto;
+    cursor: default;
+    transition: .5s ease-out;
+}
+
+.contact a:hover .box-contact{
+    color: var(--purple);
+    transition: .1s ease-in;
+    border: 2px solid var(--purple);
+    border-radius: 10px;
+    background: var(--black-white);
+}
+
+.box-contact{
+    color: var(--black-white);
+    padding: 10px;
+    font-size: 1rem;
+    text-align: center;
+    transition: .5s ease-out;
+}
+
+.box-contact i, p{
+    cursor: pointer;
+}
+
+.box-contact i{
+    font-size: 2.5rem;
+    margin-bottom: 7px;
+}
+
+/*==== Rodapé ====*/
+.Rodape{
+    padding-top: 2rem;
+	min-height: 20vh;
+	align-items: center;
+	justify-content: flex-end;
+	display: flex;
+	flex-direction: column;
+	background: var(--black-white);
+    padding-bottom: 1rem;
+}
+
+footer{
+	position: relative;
+	height: auto;
+	background: var(--black-white);
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+footer .container-rodape{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	flex-direction: row;
+    width: 70%;
+}
+
+footer .container-rodape .sec{ 
+	margin-right: 30px;
+}
+
+footer .container-rodape .sec.aboutus{
+	width: 40%;
+}
+
+footer .container-rodape  h2{
+	position: relative;
+	color: var(--white-black);
+	font-weight: 500;
+	margin-bottom: 15px;
+	font-family: 1.3rem;
+}
+
+footer h2:before{
+	content: '';
+	position: absolute;
+	bottom: -5px;
+	left: 0;
+	width: 50px;
+	height: 2px;
+	background: var(--purple);
+}
+
+footer  p{
+	color: var(--white-black);
+	font-size: 1rem;
+}
+
+.quickLinks{
+	position: relative;
+	width: 15%;
+}
+
+.quickLinks ul li{
+	list-style: none;
+}
+
+.quickLinks ul li a{
+	color: var(--white-black);
+	text-decoration: none;
+	margin-bottom: 10px;
+	display: inline-block;
+	font-size: 1rem;
+}
+
+.quickLinks ul li a:hover{
+	color: var(--purple);
+    transition: 1s ease;
+}
+
+@media screen and (max-width: 991px){
+    footer{
+		padding: 40px;
+	}
+	footer .container-rodape{
+		flex-direction: column;
+	}
+	footer .container-rodape .sec{
+		margin-right: 0;
+		margin-bottom: 40px;
+	}
+	footer .container-rodape .sec.aboutus, .quickLinks{
+		width: 100%;
+	}
+	footer .sec.quickLinks h2{
+		margin-top: 1.5rem;
+	}
 }
