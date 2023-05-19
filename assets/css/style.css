@@ -136,6 +136,41 @@ header .contain-text h1{
     }
 }
 
+@media screen and (max-width: 480px){
+    header .contain-text{
+        padding-top: 14vh;
+        justify-content: center;
+        display:block;
+        width: 95%;
+        margin: auto;
+    }
+    header .contain-text img{
+        width: 60%;
+        height: 50%;
+        margin: auto;
+        display: flex;
+        margin-bottom: 2rem;
+    }
+    header .contain-text h1{
+        width: 100%;
+        font-size: 2rem;
+        line-height: 3rem;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 1440px){
+    header{
+        max-height: 100vh;
+    }
+    #certificados{
+        max-height: 100vh;
+    }
+    #project{
+        max-height: 100vh;
+    }
+}
+
 
 /*==== About ====*/
 #About{
@@ -229,6 +264,7 @@ header .contain-text h1{
     font-size: 15px;
     line-height: 18px;
 }
+
 @media screen and (max-width: 991px){
     .certificados{
         display: inline;
