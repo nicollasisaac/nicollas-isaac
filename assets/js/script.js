@@ -1,15 +1,24 @@
 AOS.init();
 
-const title = document.querySelector('.contain-text h1');
+// Selecionar o elemento usando jQuery
+const title = $('.contain-text h1');
 
-function typeWrite(element){
+// Função para simular digitação
+function typeWrite(element) {
     let x = 75;
-    const textArray = element.innerHTML.split('');
-    element.innerHTML = '';
-    textArray.forEach((letter, i) => {
-        setTimeout(()=> element.innerHTML += letter , x += 105)
+    // Dividir o conteúdo do elemento em um array de letras
+    const textArray = element.html().split('');
+    element.html('');
+    // Para cada letra do array
+    $.each(textArray, function (i, letter) {
+        // Definir um tempo de espera usando setTimeout
+        setTimeout(function () {
+            // Adicionar a letra ao conteúdo do elemento
+            element.html(element.html() + letter);
+        }, x += 105);
     });
 }
 
+// Chamar a função passando o elemento selecionado
 typeWrite(title);
 
