@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 /*==== Config. Gerais====*/
 
-*{
+* {
     user-select: none;
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -9,23 +9,23 @@
     text-decoration: none;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
 /*==== Scroll Personalizado ====*/
-::-webkit-scrollbar{
-	width: .5vw;
+::-webkit-scrollbar {
+    width: .5vw;
 }
 
-::-webkit-scrollbar-thumb{
-	background: linear-gradient(transparent, var(--purple), var(--white-black));
-	border-radius: 6px;
-	transition: .6s ease-in;
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(transparent, var(--purple), var(--white-black));
+    border-radius: 6px;
+    transition: .6s ease-in;
 }
 
-/*==== Darkmode====*/ 
-.darkmode{
+/*==== Darkmode====*/
+.darkmode {
     --white-black: #2b2b2b;
     --purple: #AD00FF;
     --black-white: #ffffff;
@@ -36,14 +36,15 @@ html{
     --purple: #AD00FF;
     --black-white: #2E2E2E;
 }
-.dark{
+
+.dark {
     padding-left: 90%;
     width: 60px;
     position: absolute;
 }
 
-@media screen and (max-width: 911px){
-    .dark{
+@media screen and (max-width: 911px) {
+    .dark {
         margin: auto;
         padding-left: 80%;
         width: 60px;
@@ -51,28 +52,29 @@ html{
     }
 }
 
-header .dark i{
+header .dark i {
     color: var(--black-white);
     font-size: 2rem;
     padding-top: 20px;
     cursor: pointer;
 }
 
-header .dark i:hover{
+header .dark i:hover {
     color: var(--black-white);
     transition: .3s ease;
 }
 
 /*==== Header ====*/
-button{
+button {
     background: transparent;
     border: none;
 }
-body{
+
+body {
     background: var(--white-black);
 }
 
-header{
+header {
     width: 100%;
     margin: auto;
     position: relative;
@@ -80,30 +82,31 @@ header{
     justify-content: space-between;
 }
 
-header img{
+header img {
     margin: auto;
     width: 30%;
     height: 30%;
     border-radius: 10rem;
 }
 
-@keyframes zoom{
-    0%{
+@keyframes zoom {
+    0% {
         transform: scale(1.3);
     }
-    100%{
+
+    100% {
         transform: scale(1);
     }
 }
 
-header .contain-text{
+header .contain-text {
     width: 80%;
     margin: auto;
     padding-top: 5rem;
     display: flex;
 }
 
-header .contain-text h1{
+header .contain-text h1 {
     color: var(--purple);
     margin: auto;
     width: 50%;
@@ -114,21 +117,23 @@ header .contain-text h1{
     line-height: 4rem;
 }
 
-@media screen and (max-width: 991px){
-    header .contain-text{
+@media screen and (max-width: 991px) {
+    header .contain-text {
         padding-top: 14vh;
         justify-content: center;
-        display:block;
+        display: block;
         width: 90%;
     }
-    header .contain-text img{
+
+    header .contain-text img {
         width: 60%;
         height: 50%;
         margin: auto;
         display: flex;
         margin-bottom: 2rem;
     }
-    header .contain-text h1{
+
+    header .contain-text h1 {
         width: 100%;
         font-size: 2rem;
         line-height: 3rem;
@@ -136,22 +141,24 @@ header .contain-text h1{
     }
 }
 
-@media screen and (max-width: 480px){
-    header .contain-text{
+@media screen and (max-width: 480px) {
+    header .contain-text {
         padding-top: 14vh;
         justify-content: center;
-        display:block;
+        display: block;
         width: 95%;
         margin: auto;
     }
-    header .contain-text img{
+
+    header .contain-text img {
         width: 60%;
         height: 50%;
         margin: auto;
         display: flex;
         margin-bottom: 2rem;
     }
-    header .contain-text h1{
+
+    header .contain-text h1 {
         width: 100%;
         font-size: 2rem;
         line-height: 3rem;
@@ -159,35 +166,36 @@ header .contain-text h1{
     }
 }
 
-@media screen and (max-width: 1440px){
-    header{
+@media screen and (max-width: 1440px) {
+    header {
         max-height: 100vh;
     }
-    #certificados{
-        max-height: 100vh;
+
+    #certificados {
+        min-height: 100vh;
     }
-    #project{
-        max-height: 100vh;
+
+    #project {
+        min-height: 100vh;
     }
 }
 
-
 /*==== About ====*/
-#About{
+#About {
     background: var(--white-black);
 }
 
-.about-text h1{
+.about-text h1 {
     font-style: normal;
     font-weight: 400;
     font-size: 2.5rem;
     color: var(--purple);
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
-    text-align: center;    
+    text-align: center;
 }
 
-.about-text p{
+.about-text p {
     font-weight: 400;
     width: 90%;
     margin: auto;
@@ -199,34 +207,34 @@ header .contain-text h1{
 }
 
 /*==== Certificações ====*/
-#Certifica{
+#Certifica {
     background: var(--white-black);
     padding-bottom: 2.5rem;
 }
 
-#Certifica h1{
+#Certifica h1 {
     font-style: normal;
     font-weight: 400;
     font-size: 2.5rem;
     color: var(--purple);
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
-    text-align: center;  
+    text-align: center;
 }
 
-.certificados{
+.certificados {
     justify-content: space-around;
     width: 90%;
     margin: auto;
     display: flex;
 }
 
-.box-group{
+.box-group {
     padding-bottom: 2rem;
     width: 30%;
 }
 
-.box{
+.box {
     margin: auto;
     color: var(--black-white);
     padding: 2rem;
@@ -234,48 +242,50 @@ header .contain-text h1{
     margin-top: 1.5rem;
 }
 
-.box:hover{
+.box:hover {
     color: var(--white-black);
     background: var(--black-white);
     transition: .3s ease-out;
 }
 
-.roxoescuro{
+.roxoescuro {
     border: 1px solid #ae00ff;
 }
 
-.roxovivo{
+.roxovivo {
     border: 1px solid #970397;
 }
 
-.roxonormal{
+.roxonormal {
     border: 1px solid #ff00ff;
 }
 
-.box h2{
+.box h2 {
     font-weight: 300;
     font-size: 1.5rem;
     line-height: 28px;
 }
 
-.box p{
+.box p {
     font-weight: 300;
     padding-top: 5px;
     font-size: 15px;
     line-height: 18px;
 }
 
-@media screen and (max-width: 991px){
-    .certificados{
+@media screen and (max-width: 991px) {
+    .certificados {
         display: inline;
-    }    
-    .box-group{
+    }
+
+    .box-group {
         margin: auto;
         display: inline-block;
         padding-bottom: 0rem;
         width: 100%;
     }
-    .box{
+
+    .box {
         color: var(--black-white);
         padding: 20px;
         margin: auto;
@@ -288,7 +298,7 @@ header .contain-text h1{
 
 
 /*==== Parallax ====*/
-.img-parallax{
+.img-parallax {
     background-color: #2E2E2E;
     width: 100%;
     height: 35vh;
@@ -298,25 +308,26 @@ header .contain-text h1{
     background-position: center;
     transition: 2s ease-in;
     position: relative;
-    
+
 }
 
 /*==== Projetos ====*/
-#project{
+#project {
     background: var(--white-black);
     padding-bottom: 1rem;
 }
 
-#project h1{
+#project h1 {
     font-style: normal;
     font-weight: 400;
     font-size: 2.5rem;
     color: var(--purple);
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
-    text-align: center;  
+    text-align: center;
 }
-.group-projects{
+
+.group-projects {
     margin: auto;
     display: flex;
     justify-content: space-around;
@@ -324,40 +335,41 @@ header .contain-text h1{
     width: 85%;
 }
 
-.box-project{
+.box-project {
     color: var(--black-white);
     padding: 40px;
     border-radius: 10px;
     border: 1px solid var(--purple);
 }
 
-.box-project:hover{
+.box-project:hover {
     color: var(--white-black);
     background: var(--black-white);
     transition: .3s ease-out;
 }
 
-.box-project h2{
+.box-project h2 {
     font-weight: 300;
     font-size: 1.5rem;
     line-height: 28px;
 }
 
-.box-project p{
+.box-project p {
     font-weight: 300;
     padding-top: 5px;
     font-size: 15px;
     line-height: 18px;
 }
 
-@media screen and (max-width: 991px){
-    .group-projects{
+@media screen and (max-width: 991px) {
+    .group-projects {
         margin: auto;
-        display: inline-block;
+        display: block;
         padding-bottom: 0rem;
         width: 100%;
     }
-    .box-project{
+
+    .box-project {
         color: var(--black-white);
         padding: 20px;
         margin: auto;
@@ -369,41 +381,41 @@ header .contain-text h1{
 }
 
 /*==== Contato ====*/
-#contact{
+#contact {
     background: var(--white-black);
     padding-bottom: 3rem;
 }
 
-#contact h1{
+#contact h1 {
     font-style: normal;
     font-weight: 400;
     font-size: 2.5rem;
     color: var(--purple);
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
-    text-align: center;  
+    text-align: center;
 }
 
-.contact{
+.contact {
     display: flex;
     justify-content: space-between;
     width: 90%;
     margin: auto;
 }
 
-.contact a{
+.contact a {
     width: 20%;
     margin: auto;
     cursor: default;
     transition: .5s ease-out;
 }
 
-.contact a:hover .box-contact{
+.contact a:hover .box-contact {
     color: var(--purple);
     transition: .1s ease-in;
 }
 
-.box-contact{
+.box-contact {
     color: var(--black-white);
     padding: 10px;
     font-size: 1rem;
@@ -411,112 +423,140 @@ header .contain-text h1{
     transition: .5s ease-out;
 }
 
-.box-contact i, p{
+.box-contact i,
+p {
     cursor: pointer;
 }
 
-.box-contact i{
+.box-contact i {
     font-size: 2.5rem;
     margin-bottom: 7px;
 }
 
 /*==== Rodapé ====*/
-.Rodape{
+.Rodape {
     padding-top: 2rem;
-	min-height: 20vh;
-	align-items: center;
-	justify-content: flex-end;
-	display: flex;
-	flex-direction: column;
-	background: var(--black-white);
+    min-height: 20vh;
+    align-items: center;
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: column;
+    background: var(--black-white);
     padding-bottom: 1rem;
 }
 
-footer{
-	position: relative;
-	height: auto;
-	background: var(--black-white);
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
+footer {
+    position: relative;
+    height: auto;
+    background: var(--black-white);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-footer .container-rodape{
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	flex-direction: row;
+footer .container-rodape {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
     width: 70%;
 }
 
-footer .container-rodape .sec{ 
-	margin-right: 30px;
+footer .container-rodape .sec {
+    margin-right: 30px;
 }
 
-footer .container-rodape .sec.aboutus{
-	width: 40%;
+footer .container-rodape .sec.aboutus {
+    width: 40%;
 }
 
-footer .container-rodape  h2{
-	position: relative;
-	color: var(--white-black);
-	font-weight: 500;
-	margin-bottom: 15px;
-	font-family: 1.3rem;
+footer .container-rodape h2 {
+    position: relative;
+    color: var(--white-black);
+    font-weight: 500;
+    margin-bottom: 15px;
+    font-family: 1.3rem;
 }
 
-footer h2:before{
-	content: '';
-	position: absolute;
-	bottom: -5px;
-	left: 0;
-	width: 50px;
-	height: 2px;
-	background: var(--purple);
+footer h2:before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: var(--purple);
 }
 
-footer  p{
-	color: var(--white-black);
-	font-size: 1rem;
+footer p {
+    color: var(--white-black);
+    font-size: 1rem;
 }
 
-.quickLinks{
-	position: relative;
-	width: 15%;
+.quickLinks {
+    position: relative;
+    width: 15%;
 }
 
-.quickLinks ul li{
-	list-style: none;
+.quickLinks ul li {
+    list-style: none;
 }
 
-.quickLinks ul li a{
-	color: var(--white-black);
-	text-decoration: none;
-	margin-bottom: 10px;
-	display: inline-block;
-	font-size: 1rem;
+.quickLinks ul li a {
+    color: var(--white-black);
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+    font-size: 1rem;
 }
 
-.quickLinks ul li a:hover{
-	color: var(--purple);
+.quickLinks ul li a:hover {
+    color: var(--purple);
     transition: 1s ease;
 }
 
-@media screen and (max-width: 991px){
-    footer{
-		padding: 40px;
-	}
-	footer .container-rodape{
-		flex-direction: column;
-	}
-	footer .container-rodape .sec{
-		margin-right: 0;
-		margin-bottom: 40px;
-	}
-	footer .container-rodape .sec.aboutus, .quickLinks{
-		width: 100%;
-	}
-	footer .sec.quickLinks h2{
-		margin-top: 1.5rem;
-	}
+@media screen and (max-width: 991px) {
+    footer {
+        padding: 40px;
+    }
+
+    footer .container-rodape {
+        flex-direction: column;
+    }
+
+    footer .container-rodape .sec {
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+
+    footer .container-rodape .sec.aboutus,
+    .quickLinks {
+        width: 100%;
+    }
+
+    footer .sec.quickLinks h2 {
+        margin-top: 1.5rem;
+    }
+}
+
+/* CSS para o botão */
+.button {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--purple);
+    color: var(--white-black);
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: var(--purple);
+}
+
+.button:active {
+    background-color: var(--purple);
 }

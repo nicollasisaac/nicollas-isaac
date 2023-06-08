@@ -22,3 +22,19 @@ function typeWrite(element) {
 // Chamar a função passando o elemento selecionado
 typeWrite(title);
 
+function carregarFooter() {
+    var xhr = new XMLHttpRequest();
+
+    xhr.open('GET', 'js/footer.txt', true);
+
+    xhr.onload = function () {
+        if (xhr.status === 200) {
+            var footer = xhr.responseText;
+
+            document.getElementById('paragrafoFooter').textContent += footer;
+        }
+    };
+
+    xhr.send();
+}
+
