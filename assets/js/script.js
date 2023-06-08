@@ -25,7 +25,7 @@ typeWrite(title);
 function carregarFooter() {
     var xhr = new XMLHttpRequest();
 
-    xhr.open('GET', 'js/footer.txt', true);
+    xhr.open('GET', 'assets/js/footer.txt', true);
 
     xhr.onload = function () {
         if (xhr.status === 200) {
